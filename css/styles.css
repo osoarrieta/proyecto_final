@@ -1,0 +1,328 @@
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+
+body {
+  box-sizing: content-box;
+  background: linear-gradient(to top, #0c7489, #13505B);
+  margin: auto; }
+
+.encabezado {
+  color: #13505b;
+  background-color: #119DA4;
+  background: linear-gradient(to top, #119DA4, #0c7489); }
+  .encabezado .encabezado__logo {
+    display: flex;
+    justify-content: flex-start;
+    animation: pulse;
+    animation-duration: 2s;
+    margin: auto 0;
+    margin-top: 10px;
+    margin-left: 5px; }
+  .encabezado .encabezado__nav {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    animation: backInLeft;
+    animation-duration: 2s; }
+    .encabezado .encabezado__nav .encabezado__nav__lista {
+      display: flex;
+      align-items: center;
+      list-style: none; }
+      .encabezado .encabezado__nav .encabezado__nav__lista .encabezado__nav__lista__item {
+        margin-right: 20px;
+        font-family: 'Tourney', 'cursive';
+        font-weight: bolder;
+        font-size: 18PX;
+        text-shadow: 3px 2px 2px rgba(118, 118, 118, 0.6); }
+      .encabezado .encabezado__nav .encabezado__nav__lista .link_item {
+        color: #3a3a9c; }
+
+.animate__backInLeft {
+  --animate-duration: 3s; }
+
+.pie {
+    color: white;
+    background: linear-gradient(to top, #040404, #13505B); }
+    .pie ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none; }
+        .pie ul li {
+            padding-top: 15px; }
+        .pie .pie__imagePie {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-content: flex-end;
+            margin: 0 auto;
+            padding-right: 10px;
+            padding-bottom: 10px; }
+
+/*################ CLASES ################*/
+/*--- CLASES INDEX ---*/
+.main__fondoIndex {
+  background-image: url("../images/fondoIndex1.jpg");
+  padding: 20%;
+  width:fit-content; }
+
+.main__fondoIndex .main__title {
+  animation-duration: 2s;
+  animation-name: apareceTitle;
+  color: white;
+  font-family: 'Tourney', 'cursive';
+  font-size: 100px;
+  padding: auto 0;
+  padding-left: 15px;
+  padding-bottom: 100px;
+  margin: 0%; }
+
+.main__fondoIndex .main__p {
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.imagenTest {
+  background: linear-gradient(to top, #13505B, #119DA4);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+@keyframes apareceTitle {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*--- CLASES SECCION NOSOTROS ---*/
+.SobreNosotros {
+  background: linear-gradient(to top, #0c7489, #13505B);
+  margin: 0%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px; }
+  .SobreNosotros .SobreNosotros__title {
+    color: white;
+    font-family: 'Tourney', 'cursive';
+    font-size: 30px;
+    text-align: center; }
+  .SobreNosotros .SobreNosotros__p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Tourney';
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center; }
+
+.SobreNosotros__videoCorpo {
+  background: linear-gradient(to top, #13505B, #0c7489);
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 0%; }
+
+/*--- CLASES SECCION SERVICIOS ---*/
+.Servicios__title {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Tourney', 'cursive';
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.carousel {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87); }
+
+.carousel-inner img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 500px;
+  margin: auto; }
+
+.Servicios__p {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-family: 'Tourney', 'cursive';
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.49);
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+/*--- CLASES SECCION CLIENTES---*/
+.clientes__title {
+  color: white;
+  font-family: 'Tourney';
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center; }
+
+.clientes__boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-template-areas: "img img img"
+ "article article article";
+  justify-items: center; }
+
+.clientes__boxes__1 {
+  border: 5px red solid;
+  height: 250px;
+  width: 300px;
+  margin-top: 70px;
+  animation: fadeInUp;
+  animation-duration: 2s; }
+
+.clientes__boxes__1:hover {
+  height: 400px;
+  width: 350px; }
+
+.clientes__boxes__2 {
+  border: 5px red solid;
+  height: 250px;
+  width: 300px;
+  margin-top: 70px;
+  animation: fadeInUp;
+  animation-duration: 2s; }
+
+.clientes__boxes__2:hover {
+  height: 400px;
+  width: 350px; }
+
+.clientes__boxes__3 {
+  border: 5px red solid;
+  height: 250px;
+  width: 300px;
+  margin-top: 70px;
+  animation: fadeInUp;
+  animation-duration: 2s; }
+
+.clientes__boxes__3:hover {
+  height: 400px;
+  width: 350px; }
+
+.clientes__boxes__cajaText {
+  color: white;
+  font-weight: bolder;
+  font-family: 'Yatra One', cursive;
+  height: 250px;
+  width: 300px; }
+
+/*--- CLASES SECCION CONTACTOS---*/
+.formContacto {
+  width: 500px;
+  height: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  border: black solid 3px;
+  background: #0c7489;
+  background: linear-gradient(180deg, #0c7489 31%, #13505b 59%, #040404 100%);
+  box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
+  -webkit-box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
+  -moz-box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
+  animation: bounceIn;
+  animation-duration: 2s; }
+  .formContacto .formContacto__title {
+    color: white;
+    text-align: center;
+    font-family: 'Tourney', 'cursive';
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 30px; }
+  .formContacto .formContacto__form {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    padding: 10px; }
+
+.formContacto_desplegable {
+  margin: 5px 0px 30px 20px; }
+
+.formContacto_boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px; }
+
+/*--- CLASES SECCION 404---*/
+
+.error404{
+  box-sizing: border-box;
+  text-align:center;
+  width:100%;
+  height: 100%;
+  margin:auto;
+  padding-top: 15%;
+
+}
+
+.error404 .error404__textoh3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: 'Bangers', cursive;
+  color: #D33E3C;
+  animation: hinge;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  width:50%;
+  text-shadow: 3px 1px 0px rgba(0, 0, 0, 1);
+
+}
+
+.error404 .error404__textoh1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: 'Russo One', sans-serif;
+  color: #D33E3C;
+  background-color: black;
+
+}
+
+.btn{
+  margin-top:5%;
+}
+
+.VolverInicio{
+  color: white;
+  text-decoration:none;
+  font-family: 'Bangers', cursive;
+}
+.VolverInicio:hover{
+  color: white;
+  text-decoration:none;
+}
+
+
+
