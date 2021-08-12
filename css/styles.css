@@ -69,7 +69,9 @@ body {
 .main__fondoIndex {
   background-image: url("../images/fondoIndex1.jpg");
   padding: 20%;
-  width:fit-content; }
+  width:fit-content;
+  animation:fadeIn;
+  animation-duration: 2s; }
 
 .main__fondoIndex .main__title {
   animation-duration: 2s;
@@ -248,7 +250,7 @@ body {
   box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
   -webkit-box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
   -moz-box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
-  animation: bounceIn;
+  animation:fadeIn;
   animation-duration: 2s; }
   .formContacto .formContacto__title {
     color: white;
