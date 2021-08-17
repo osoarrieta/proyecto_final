@@ -1,16 +1,16 @@
+
 html {
-    box-sizing: border-box;
-    margin:auto 0;
-    padding: auto 0;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: inherit; }
 
-body{
-    background: linear-gradient(to top, #0c7489, #13505B);
-}
+
+body {
+  box-sizing: content-box;
+  background: linear-gradient(to top, #0c7489, #13505B);
+  margin: auto; }
+
 .encabezado {
   color: #13505b;
   background-color: #119DA4;
@@ -37,8 +37,8 @@ body{
         margin-right: 20px;
         font-family: 'Tourney', 'cursive';
         font-weight: bolder;
-        font-size: 20PX;
-        text-shadow: 3px 2px 2px rgba(118,118,118,0.6); }
+        font-size: 18PX;
+        text-shadow: 3px 2px 2px rgba(118, 118, 118, 0.6); }
       .encabezado .encabezado__nav .encabezado__nav__lista .link_item {
         color: #3a3a9c; }
 
@@ -46,42 +46,46 @@ body{
   --animate-duration: 3s; }
 
 .pie {
-  color: white;
-  background: linear-gradient(to top, #040404, #13505B); }
-  .pie ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    list-style: none; }
-  .pie ul li {
-    padding-top: 15px; }
-  .pie .pie__imagePie {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin: 0 auto;
-    padding-right: 10px;
-    padding-bottom: 10px; }
+    color: white;
+    background: linear-gradient(to top, #040404, #13505B); }
+    .pie ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none; }
+        .pie ul li {
+            padding-top: 2px; }
+        .pie .pie__imagePie {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-content: flex-end;
+            margin: 0 auto;
+            padding-right: 10px;
+            padding-bottom: 10px; }
 
 /*################ CLASES ################*/
 /*--- CLASES INDEX ---*/
 .main__fondoIndex {
   background-image: url("../images/fondoIndex1.jpg");
   padding: 20%;
-  animation: fadeInUp;
-  animation-duration: 2s ; }
+  width:fit-content;
+  animation:fadeIn;
+  animation-duration: 2s; }
 
 .main__fondoIndex .main__title {
   animation-duration: 2s;
   animation-name: apareceTitle;
-  color: white;
+  color: whitesmoke;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
   font-family: 'Tourney', 'cursive';
   font-size: 100px;
+  font-weight: bolder;
   padding: auto 0;
   padding-left: 15px;
   padding-bottom: 100px;
-  margin: 0%; }
+  margin: 0%;
+ }
 
 .main__fondoIndex .main__p {
   text-align: center;
@@ -94,10 +98,7 @@ body{
   display: flex;
   justify-content: center;
   padding-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: 5px 3px 10px -4px rgba(0,0,0,0.87);
-  -webkit-box-shadow: 5px 3px 10px -4px rgba(0,0,0,0.87);
-  -moz-box-shadow: 5px 3px 10px -4px rgba(0,0,0,0.87); }
+  padding-bottom: 50px; }
 
 @keyframes apareceTitle {
   0% {
@@ -113,10 +114,13 @@ body{
   padding-right: 10px;
   padding-bottom: 10px; }
   .SobreNosotros .SobreNosotros__title {
-    color: white;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
     font-family: 'Tourney', 'cursive';
-    font-size: 30px;
-    text-align: center; }
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px; }
   .SobreNosotros .SobreNosotros__p {
     display: flex;
     justify-content: center;
@@ -126,13 +130,35 @@ body{
     font-weight: bolder;
     text-align: center; }
 
-.SobreNosotros__videoCorpo {
-  background: linear-gradient(to top, #13505B, #0c7489);
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 0%; }
+  .SobreNosotros__texto{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Tourney';
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.3); 
+  }
+  .SobreNosotros__texto__p{
+    padding-top: 15px;
+    padding-right: 20%;
+    padding-left: 20%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    
+  }
+  .SobreNosotros__texto__box{
+    background: linear-gradient(to top, #13505B, #119DA4);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .SobreNosotros__texto__h3{
+    color: RGB(30,27,27);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
+    font-family: 'Tourney';
+    font-weight: bolder;
+    font-size: 30px;
+    padding-top: 50px;
+  }
 
 /*--- CLASES SECCION SERVICIOS ---*/
 .Servicios__title {
@@ -148,9 +174,9 @@ body{
   align-items: center;
   justify-content: center;
   justify-items: center;
-  box-shadow: 12px 11px 13px -5px rgba(0,0,0,0.87);
--webkit-box-shadow: 12px 11px 13px -5px rgba(0,0,0,0.87);
--moz-box-shadow: 12px 11px 13px -5px rgba(0,0,0,0.87); }
+  box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87); }
 
 .carousel-inner img {
   display: flex;
@@ -178,8 +204,7 @@ body{
   font-family: 'Tourney';
   font-size: 50px;
   font-weight: bolder;
-  text-align: center;
-  margin-top: 20px; }
+  text-align: center; }
 
 .clientes__boxes {
   display: grid;
@@ -191,40 +216,40 @@ body{
   justify-items: center; }
 
 .clientes__boxes__1 {
-  animation: fadeInUp;
-  animation-duration: 2s ;
   border: 5px red solid;
   height: 250px;
   width: 300px;
-  margin-top: 70px; }
+  margin-top: 70px;
+  animation: fadeInUp;
+  animation-duration: 2s; }
 
 .clientes__boxes__1:hover {
-  height: 350px;
-  width: 400px; }
+  height: 400px;
+  width: auto; }
 
 .clientes__boxes__2 {
-  animation: fadeInUp;
-  animation-duration: 2s ;
   border: 5px red solid;
   height: 250px;
   width: 300px;
-  margin-top: 70px; }
+  margin-top: 70px;
+  animation: fadeInUp;
+  animation-duration: 2s; }
 
 .clientes__boxes__2:hover {
-  height: 350px;
-  width: 400px; }
+  height: 400px;
+  width: 450px; }
 
 .clientes__boxes__3 {
-  animation: fadeInUp;
-  animation-duration: 2s ;
   border: 5px red solid;
   height: 250px;
   width: 300px;
-  margin-top: 70px; }
+  margin-top: 70px;
+  animation: fadeInUp;
+  animation-duration: 2s; }
 
 .clientes__boxes__3:hover {
-  height: 350px;
-  width: 400px; }
+  height: 400px;
+  width: 450px; }
 
 .clientes__boxes__cajaText {
   color: white;
@@ -234,7 +259,7 @@ body{
   width: 300px; }
 
 /*--- CLASES SECCION CONTACTOS---*/
-.formContacto{
+.formContacto {
   width: 500px;
   height: 700px;
   text-align: center;
@@ -248,14 +273,13 @@ body{
   margin-right: auto;
   margin-bottom: 0px;
   border: black solid 3px;
-  background: rgb(12,116,137);
-  background: linear-gradient(180deg, rgba(12,116,137,1) 31%, rgba(19,80,91,1) 59%, rgba(4,4,4,1) 100%);
-  box-shadow: 12px 11px 13px -5px rgba(255,255,255,0.87);
-  -webkit-box-shadow: 12px 11px 13px -5px rgba(255,255,255,0.87);
-  -moz-box-shadow: 12px 11px 13px -5px rgba(255,255,255,0.87);
-  animation:bounceIn;
-  animation-duration: 2s;
-}
+  background: #0c7489;
+  background: linear-gradient(180deg, #0c7489 31%, #13505b 59%, #040404 100%);
+  box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
+  -webkit-box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
+  -moz-box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
+  animation:fadeIn;
+  animation-duration: 2s; }
   .formContacto .formContacto__title {
     color: white;
     text-align: center;
@@ -263,31 +287,72 @@ body{
     font-size: 50px;
     font-weight: bolder;
     padding: 30px; }
+  .formContacto .formContacto__form {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    padding: 10px; }
 
-    .formContacto .formContacto__form {
-      color: white;
-      font-family: 'Anton', sans-serif;
-      padding: 10px; }
+.formContacto_desplegable {
+  margin: 5px 0px 30px 20px; }
 
-      .formContacto_desplegable {
-        margin: 5px 0px 30px 20px; }
+.formContacto_boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px; }
 
-        .formContacto_boton {
-          display: flex;
-          flex-direction: row;
-          justify-content: center; 
-          margin-top: 20px;}
+/*--- CLASES SECCION 404---*/
 
-/*--- CLASES NOT FOUND ---*/
-.notFoundTitle {
+.error404{
   box-sizing: border-box;
+  text-align:center;
+  width:100%;
+  height: 100%;
+  margin:auto;
+  padding-top: 15%;
+
+}
+
+.error404 .error404__textoh3{
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color: red;
-  background-color: black; }
-  .notFoundTitle h1 {
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 10%;
-    background-color: black;
-    font-size: 200px; }
+  font-size: 30px;
+  font-family: 'Bangers', cursive;
+  color: #D33E3C;
+  animation: hinge;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  width:50%;
+  text-shadow: 3px 1px 0px rgba(0, 0, 0, 1);
+
+}
+
+.error404 .error404__textoh1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: 'Russo One', sans-serif;
+  color: #D33E3C;
+  background-color: black;
+
+}
+
+.btn{
+  margin-top:5%;
+}
+
+.VolverInicio{
+  color: white;
+  text-decoration:none;
+  font-family: 'Bangers', cursive;
+}
+.VolverInicio:hover{
+  color: white;
+  text-decoration:none;
+}
+
+
+

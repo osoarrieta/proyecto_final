@@ -1,10 +1,8 @@
-
 html {
   box-sizing: border-box; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
-
 
 body {
   box-sizing: content-box;
@@ -45,7 +43,7 @@ body {
 .animate__backInLeft {
   --animate-duration: 3s; }
 
-.pie {
+  .pie {
     color: white;
     background: linear-gradient(to top, #040404, #13505B); }
     .pie ul {
@@ -54,7 +52,7 @@ body {
         justify-content: flex-start;
         list-style: none; }
         .pie ul li {
-            padding-top: 15px; }
+            padding-top: 2px; }
         .pie .pie__imagePie {
             display: flex;
             flex-direction: row;
@@ -69,16 +67,18 @@ body {
 .main__fondoIndex {
   background-image: url("../images/fondoIndex1.jpg");
   padding: 20%;
-  width:fit-content;
-  animation:fadeIn;
+  width: fit-content;
+  animation: fadeIn;
   animation-duration: 2s; }
 
 .main__fondoIndex .main__title {
   animation-duration: 2s;
   animation-name: apareceTitle;
-  color: white;
+  color: whitesmoke;
+  text-shadow: 2px 2px 0px black;
   font-family: 'Tourney', 'cursive';
   font-size: 100px;
+  font-weight: bolder;
   padding: auto 0;
   padding-left: 15px;
   padding-bottom: 100px;
@@ -111,10 +111,13 @@ body {
   padding-right: 10px;
   padding-bottom: 10px; }
   .SobreNosotros .SobreNosotros__title {
-    color: white;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px white;
     font-family: 'Tourney', 'cursive';
-    font-size: 30px;
-    text-align: center; }
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px; }
   .SobreNosotros .SobreNosotros__p {
     display: flex;
     justify-content: center;
@@ -123,14 +126,30 @@ body {
     font-size: 20px;
     font-weight: bolder;
     text-align: center; }
-
-.SobreNosotros__videoCorpo {
-  background: linear-gradient(to top, #13505B, #0c7489);
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 0%; }
+  .SobreNosotros__texto {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Tourney';
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .SobreNosotros__texto__p {
+    padding-top: 15px;
+    padding-right: 20%;
+    padding-left: 20%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .SobreNosotros__texto__box {
+    background: linear-gradient(to top, #13505B, #119DA4);
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .SobreNosotros__texto__h3 {
+    color: RGB(30, 27, 27);
+    text-shadow: 2px 2px 5px white;
+    font-family: 'Tourney';
+    font-weight: bolder;
+    font-size: 30px;
+    padding-top: 50px; }
 
 /*--- CLASES SECCION SERVICIOS ---*/
 .Servicios__title {
@@ -197,7 +216,7 @@ body {
 
 .clientes__boxes__1:hover {
   height: 400px;
-  width: 350px; }
+  width: auto; }
 
 .clientes__boxes__2 {
   border: 5px red solid;
@@ -209,7 +228,7 @@ body {
 
 .clientes__boxes__2:hover {
   height: 400px;
-  width: 350px; }
+  width: 450px; }
 
 .clientes__boxes__3 {
   border: 5px red solid;
@@ -221,7 +240,7 @@ body {
 
 .clientes__boxes__3:hover {
   height: 400px;
-  width: 350px; }
+  width: 450px; }
 
 .clientes__boxes__cajaText {
   color: white;
@@ -250,7 +269,7 @@ body {
   box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
   -webkit-box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
   -moz-box-shadow: 12px 11px 13px -5px rgba(255, 255, 255, 0.87);
-  animation:fadeIn;
+  animation: fadeIn;
   animation-duration: 2s; }
   .formContacto .formContacto__title {
     color: white;
@@ -274,57 +293,43 @@ body {
   margin-top: 20px; }
 
 /*--- CLASES SECCION 404---*/
-
-.error404{
+.error404 {
   box-sizing: border-box;
-  text-align:center;
-  width:100%;
+  text-align: center;
+  width: 100%;
   height: 100%;
-  margin:auto;
-  padding-top: 15%;
+  margin: auto;
+  padding-top: 15%; }
+  .error404 .error404__textoh3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+    color: #D33E3C;
+    animation: hinge;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    width: 50%;
+    text-shadow: 3px 1px 0px black; }
+  .error404 .error404__textoh1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: 'Russo One', sans-serif;
+    color: #D33E3C;
+    background-color: black; }
 
-}
+.btn {
+  margin-top: 5%; }
 
-.error404 .error404__textoh3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  font-family: 'Bangers', cursive;
-  color: #D33E3C;
-  animation: hinge;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  width:50%;
-  text-shadow: 3px 1px 0px rgba(0, 0, 0, 1);
-
-}
-
-.error404 .error404__textoh1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-  font-weight: bolder;
-  font-family: 'Russo One', sans-serif;
-  color: #D33E3C;
-  background-color: black;
-
-}
-
-.btn{
-  margin-top:5%;
-}
-
-.VolverInicio{
+.VolverInicio {
   color: white;
-  text-decoration:none;
-  font-family: 'Bangers', cursive;
-}
-.VolverInicio:hover{
+  text-decoration: none;
+  font-family: 'Bangers', cursive; }
+
+.VolverInicio:hover {
   color: white;
-  text-decoration:none;
-}
-
-
-
+  text-decoration: none; }
