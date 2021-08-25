@@ -19,96 +19,107 @@
     <title>Contacto - Doble A</title>
 </head>
   <body>
-    <div class="row">
-      <header class="encabezado">
-          <img src="../images/logo1.png" alt="logo" class="img-fluid encabezado__logo "/>
+    <div class="container-fluid">
+          <div class="row">
+            <header>
+              <div class="row">
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light encabezado">
+                      <a class="navbar-brand" href="#">
+                      <img src="../images/logo1.png" alt="logo" class="img-fluid">
+                    </a>
+                    
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link " href="../Index.html">Inicio</a>
+                                <a class="nav-item nav-link" href="Sobre Nosotros.html">Nosotros</a>
+                                <a class="nav-item nav-link" href="Servicios.html">Servicios</a>
+                                <a class="nav-item nav-link" href="Clientes.html">Clientes</a>
+                                <a class="nav-item nav-link active" href="Contacto.html">Contacto</a>
+                              </div>
+                      </div>
+                  
+              </div>
+          </header>
+        </div>
 
-          <nav class="navbar-nav encabezado__nav">
-              <ul class="encabezado__nav__lista">
-                  <li class="encabezado__nav__lista__item"><a class="link_item" href="../index.html">Inicio</a></li>
-                  <li class="encabezado__nav__lista__item"><a class="link_item" href="../pages/Sobre Nosotros.html">Nosotros</li><li>
-                  <li class="encabezado__nav__lista__item"><a class="link_item" href="../pages/Servicios.html">Servicios</a></li>
-                  <li class="encabezado__nav__lista__item"><a class="link_item" href="../pages/Clientes.html">Clientes</a></li>
-                  <li class="encabezado__nav__lista__item"><a class="link_item" href="../pages/Contacto.html">Contacto</a></li>
+          <section class="formContacto">
+            <h2 class="formContacto__title">Contacto</h2>
+
+          
+
+          <fieldset>
+            <legend style="color: white;"><strong>Datos Personales</strong></legend>
+          <form action="/my-handling-form-page" method="post" class="formContacto__form">
+          
+            <!--ENTRADA DE TEXTO-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre completo">
+            <br>
+            <br>
+
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" placeholder="Ingresa tu direccion de email..">
+            <br>
+            <br>
+
+            <label for="tel">Telefono:</label>
+            <input type="tel" id="tel" placeholder="Ingresa tu num de telefono..">
+            <br>
+            <br>
+
+            <!--CHECKBOX-->
+            <div>Sexo:</div>
+            <label for="masculino">Hombre</label>
+            <input type="radio" name="sexo" value="hombre" id="masculino" />
+            <label for="femenino">Mujer</label>
+            <input type="radio" name="sexo" value="mujer" id="femenino" />
+            <label for="otro">Otro</label>
+            <input type="radio" name="sexo" value="otro" id="otro" />
+            <br>
+            <br>
+          </fieldset> 
+
+            <!--MENU DESPLEGABLE-->
+            <h4 style="color: white; font-family: 'Anton', sans-serif; margin: 10px;">¿Desde donde nos contactas?</h4>
+            <select class="formContacto_desplegable">
+              <option value="Córdoba">Córdoba</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="San Luis">San Luis</option>
+
+            </select>
+            <br>
+            <br>
+
+            <!--BOTONES-->
+            <div class="formContacto_boton">
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpiar" />
+            </div>  
+          </form>
+        </section>
+          <br>
+          <br>
+
+      <!--Footer o pie de pagina-->
+
+          <div class="row">
+            <footer class="pie">
+              <ul>
+                  <li><strong>Aviso legal</strong></li>
+                  <li><strong>Privacidad</strong></li>
               </ul>
-          </nav>
-      </header>
-  </div>
+              <div class="pie__imagePie">
+                <a href="../pages/404.html"><img style="width:50px; height:46px"; src="../images/facebook.png" alt="facebook"/></a>
+                <a href="../pages/404.html"><img style="width:50px; height:50px"; src="../images/whatsapp.png" alt="whatsapp"/></a>
+                <a href="../pages/404.html"><img style="width:50px; height:50px"; src="../images/instagram.png" alt="instagram"/></a>
+              </div>
+          </footer>
+      </div>   
 
-    <section class="formContacto">
-      <h2 class="formContacto__title">Contacto</h2>
-
-    
-
-    <fieldset>
-      <legend style="color: white;"><strong>Datos Personales</strong></legend>
-    <form action="/my-handling-form-page" method="post" class="formContacto__form">
-     
-      <!--ENTRADA DE TEXTO-->
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" placeholder="Ingresa tu nombre completo">
-      <br>
-      <br>
-
-      <label for="mail">Correo electrónico:</label>
-      <input type="email" id="mail" placeholder="Ingresa tu direccion de email..">
-      <br>
-      <br>
-
-      <label for="tel">Telefono:</label>
-      <input type="tel" id="tel" placeholder="Ingresa tu num de telefono..">
-      <br>
-      <br>
-
-      <!--CHECKBOX-->
-      <div>Sexo:</div>
-      <label for="masculino">Hombre</label>
-      <input type="radio" name="sexo" value="hombre" id="masculino" />
-      <label for="femenino">Mujer</label>
-      <input type="radio" name="sexo" value="mujer" id="femenino" />
-      <label for="otro">Otro</label>
-      <input type="radio" name="sexo" value="otro" id="otro" />
-      <br>
-      <br>
-    </fieldset> 
-
-      <!--MENU DESPLEGABLE-->
-      <h4 style="color: white; font-family: 'Anton', sans-serif; margin: 10px;">¿Desde donde nos contactas?</h4>
-      <select class="formContacto_desplegable">
-        <option value="Córdoba">Córdoba</option>
-        <option value="Buenos Aires">Buenos Aires</option>
-        <option value="Mendoza">Mendoza</option>
-        <option value="San Luis">San Luis</option>
-
-      </select>
-      <br>
-      <br>
-
-      <!--BOTONES-->
-      <div class="formContacto_boton">
-      <input type="submit" value="Enviar" />
-      <input type="reset" value="Limpiar" />
-      </div>  
-    </form>
-  </section>
-    <br>
-    <br>
-
-<!--Footer o pie de pagina-->
-
-    <div class="row">
-      <footer class="pie">
-         <ul>
-             <li><strong>Aviso legal</strong></li>
-             <li><strong>Privacidad</strong></li>
-        </ul>
-         <div class="pie__imagePie">
-          <a href="../pages/404.html"><img style="width:50px; height:46px"; src="../images/facebook.png" alt="facebook"/></a>
-          <a href="../pages/404.html"><img style="width:50px; height:50px"; src="../images/whatsapp.png" alt="whatsapp"/></a>
-          <a href="../pages/404.html"><img style="width:50px; height:50px"; src="../images/instagram.png" alt="instagram"/></a>
-         </div>
-    </footer>
-</div>    
-    
+    </div>    
   </body>
 </html>

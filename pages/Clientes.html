@@ -18,49 +18,82 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Clientes - Doble A</title>
 </head>
-<div class="row">
-    <header class="encabezado">
-        <img src="../images/logo1.png" alt="logo" class="img-fluid encabezado__logo "/>
 
-        <nav class="navbar-nav encabezado__nav">
-            <ul class="encabezado__nav__lista">
-                <li class="encabezado__nav__lista__item"><a class="link_item" href="../index.html">Inicio</a></li>
-                <li class="encabezado__nav__lista__item"><a class="link_item" href="../pages/Sobre Nosotros.html">Nosotros</li><li>
-                <li class="encabezado__nav__lista__item"><a class="link_item" href="../pages/Servicios.html">Servicios</a></li>
-                <li class="encabezado__nav__lista__item"><a class="link_item" href="../pages/Clientes.html">Clientes</a></li>
-                <li class="encabezado__nav__lista__item"><a class="link_item" href="../pages/Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-</div>
+    <body>
+        <div class="container-fluid"> 
+            <div class="row">
+                <header>
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light encabezado">
+                            <a class="navbar-brand" href="#">
+                            <img src="../images/logo1.png" alt="logo" class="img-fluid">
+                          </a>
+                          
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                  <div class="navbar-nav">
+                                      <a class="nav-item nav-link" href="../Index.html">Inicio</a>
+                                      <a class="nav-item nav-link" href="Sobre Nosotros.html">Nosotros</a>
+                                      <a class="nav-item nav-link" href="Servicios.html">Servicios</a>
+                                      <a class="nav-item nav-link active" href="Clientes.html">Clientes</a>
+                                      <a class="nav-item nav-link" href="Contacto.html">Contacto</a>
+                                    </div>
+                            </div>
+                        
+                    </div>
+                </header>
+            </div>
 
-        <h1 class="clientes__title">Nuestros clientes</h1>
+                    <h1 class="clientes__title">Nuestros clientes</h1>
 
 
-<!--Cajas de GRID para imagenes de los clientes de la empresa y un breve testimonio-->
+            <!--Cajas de GRID para imagenes de los clientes de la empresa y un breve testimonio-->
 
-        <section class="clientes__boxes">           
-                <img src="../images/client1.jpg" alt="cliente1" class="clientes__boxes__1">
-                <img src="../images/client2.jpg" alt="cliente2" class="clientes__boxes__2">
-                <img src="../images/client3.jpg" alt="cliente3" class="clientes__boxes__3">
-                <article class="clientes__boxes__cajaText">Microsoft Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
-                <article class="clientes__boxes__cajaText">Cisco Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
-                <article class="clientes__boxes__cajaText">Apple Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
-        </section>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <img src="../images/client1.jpg" alt="cliente1" class="clientes__boxes__1">
+                    <article class="clientes__boxes__cajaText">Microsoft Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
+                  </div>
+                  <div class="col-sm">
+                    <img src="../images/client2.jpg" alt="cliente2" class="clientes__boxes__2">
+                    <article class="clientes__boxes__cajaText">Cisco Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
+                  </div>
+                  <div class="col-sm">
+                  <img src="../images/client3.jpg" alt="cliente3" class="clientes__boxes__3">
+                    <article class="clientes__boxes__cajaText">Cisco Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
+                  </div>
+                </div>
+              </div>
+
+                    <!--<section class="clientes__boxes">           
+                            <img src="../images/client1.jpg" alt="cliente1" class="clientes__boxes__1">
+                            <img src="../images/client2.jpg" alt="cliente2" class="clientes__boxes__2">
+                            <img src="../images/client3.jpg" alt="cliente3" class="clientes__boxes__3">
+                            <article class="clientes__boxes__cajaText">Microsoft Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
+                            <article class="clientes__boxes__cajaText">Cisco Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
+                            <article class="clientes__boxes__cajaText">Apple Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis sequi excepturi deserunt nobis aliquid, assumenda dolorem magnam voluptatem cumque maxime, rem reiciendis saepe tempore dolor inventore! Cum, eligendi aliquam!</article>
+                    </section>-->
 
 
-<!--Footer o pie de pagina-->
+            <!--Footer o pie de pagina-->
+            <div class="row">
+                <footer class="pie">
+                    <ul>
+                        <li><strong>Aviso legal</strong></li>
+                        <li><strong>Privacidad</strong></li>
+                    </ul>
+                        <div class="pie__imagePie">
+                        <a href="../pages/404.html"><img style="width:50px; height:46px"; src="../images/facebook.png" alt="facebook"/></a>
+                        <a href="../pages/404.html"><img style="width:50px; height:50px"; src="../images/whatsapp.png" alt="whatsapp"/></a>
+                        <a href="../pages/404.html"><img style="width:50px; height:50px"; src="../images/instagram.png" alt="instagram"/></a>
+                    </div>
+                </footer>   
+            </div>
 
-    <footer class="pie">
-        <ul>
-            <li><strong>Aviso legal</strong></li>
-            <li><strong>Privacidad</strong></li>
-        </ul>
-            <div class="pie__imagePie">
-            <a href="../pages/404.html"><img style="width:50px; height:46px"; src="../images/facebook.png" alt="facebook"/></a>
-            <a href="../pages/404.html"><img style="width:50px; height:50px"; src="../images/whatsapp.png" alt="whatsapp"/></a>
-            <a href="../pages/404.html"><img style="width:50px; height:50px"; src="../images/instagram.png" alt="instagram"/></a>
+
         </div>
-    </footer>   
-</body>
+    </body>
 </html>

@@ -18,61 +18,66 @@
     <title>Doble A</title>
 </head>
 <body>
+    <div class="container-fluid">
 <!--Imagen de fondo con texto de presentacion-->
-    <div class="row">
-        <header class="encabezado">
-            <img src="./images/logo1.png" alt="logo" class="img-fluid encabezado__logo"/>
-
-            <nav class="navbar-nav encabezado__nav">
-                <ul class="encabezado__nav__lista">
-                    <li class="encabezado__nav__lista__item"><a class="link_item" href="./Index.html"></a>Inicio </li>
-                    <li class="encabezado__nav__lista__item"><a class="link_item" href="pages/Sobre Nosotros.html">Nosotros<a><li>
-                    <li class="encabezado__nav__lista__item"><a class="link_item" href="pages/Servicios.html">Servicios</a></li>
-                    <li class="encabezado__nav__lista__item"><a class="link_item" href="pages/Clientes.html">Clientes</a></li>
-                    <li class="encabezado__nav__lista__item"><a class="link_item" href="pages/Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <div class="row">
-                <section class="main__fondoIndex">
-                    <h1 class="main__title">SERVICIOS & CONSULTORIA IT PARA EMPRESAS</h1>
-                        <p class="main__p">Diseñamos soluciones a medida optimizando sus procesos y reduciendo costos.
-                        Contacte con nuestros expertos; estamos para guiarte!
-                        <br>
-                        <br>
-                        <a href="pages/Servicios.html" style="color: white;"> Conoce nuestros servicios ..</a></p>  
-                </section> 
-    </div>           
-                
-<!--Seccion secundaria, posiblemente agregue noticias, testimonios o parecido-->
-
-                <section class="main__noticias">
-                    <div class="row">                     
-                        <div class="col-md-6 col-xs-3 imagenTest">
-                            <img src="./images/imagentest.png" class="img-thumbnail" alt="imagetest"></div>
-                        <div class="col-md-6 col-xs-3 imagenTest">
-                            <img src="./images/imagentest.png" class="img-thumbnail" alt="imagetest"></div>
-                    </div>
-                </section>
-    
-
-<!--Footer o pie de pagina-->
-    <div class="row">
-             <footer class="pie">
-                <ul>
-                    <li><strong>Aviso legal</strong></li>
-                    <li><strong>Privacidad</strong></li>
-               </ul>
-                <div class="pie__imagePie">
-                    <a href="./pages/404.html"><img style="width:50px; height:46px"; src="./images/facebook.png" alt="facebook"/></a>
-                    <a href="./pages/404.html"><img style="width:50px; height:50px"; src="./images/whatsapp.png" alt="whatsapp"/></a>
-                    <a href="./pages/404.html"><img style="width:50px; height:50px"; src="./images/instagram.png" alt="instagram"/></a>
+<header>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light encabezado">
+                <a class="navbar-brand" href="#">
+                <img src="./images/logo1.png" alt="logo" class="img-fluid">
+              </a>
+              
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      <div class="navbar-nav">
+                          <a class="nav-item nav-link active" href="./Index.html">Inicio</a>
+                          <a class="nav-item nav-link" href="pages/Sobre Nosotros.html">Nosotros</a>
+                          <a class="nav-item nav-link" href="pages/Servicios.html">Servicios</a>
+                          <a class="nav-item nav-link" href="pages/Clientes.html">Clientes</a>
+                          <a class="nav-item nav-link" href="pages/Contacto.html">Contacto</a>
+                        </div>
                 </div>
-           </footer>
-    </div>    
+            
+        </div>
+    </header>
+        <div class="row">
+                    <section class="main__fondoIndex">
+                        <h1 class="main__title">SERVICIOS & CONSULTORIA IT PARA EMPRESAS</h1>
+                            <p class="main__p">Diseñamos soluciones a medida optimizando sus procesos y reduciendo costos.<br>
+                            Contacte con nuestros expertos; estamos para guiarte!  
+                    </section> 
+        </div>           
+                    
+    <!--Seccion secundaria, posiblemente agregue noticias, testimonios o parecido-->
 
+                    <section class="main__noticias">
+                        <div class="row">                     
+                            <div class="col-md-6 col-xs-3 imagenTest">
+                                <img src="./images/imagentest.png" class="img-thumbnail" alt="imagetest"></div>
+                            <div class="col-md-6 col-xs-3 imagenTest">
+                                <img src="./images/imagentest.png" class="img-thumbnail" alt="imagetest"></div>
+                        </div>
+                    </section>
+        
+
+    <!--Footer o pie de pagina-->
+        <div class="row">
+                <footer class="pie">
+                    <ul>
+                        <li><strong>Aviso legal</strong></li>
+                        <li><strong>Privacidad</strong></li>
+                </ul>
+                    <div class="pie__imagePie">
+                        <a href="./pages/404.html"><img style="width:50px; height:46px"; src="./images/facebook.png" alt="facebook"/></a>
+                        <a href="./pages/404.html"><img style="width:50px; height:50px"; src="./images/whatsapp.png" alt="whatsapp"/></a>
+                        <a href="./pages/404.html"><img style="width:50px; height:50px"; src="./images/instagram.png" alt="instagram"/></a>
+                    </div>
+            </footer>
+        </div>    
+
+    </div>
 
 </body>
 </html>
