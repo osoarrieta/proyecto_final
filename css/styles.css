@@ -6,7 +6,7 @@ html {
 
 body {
   box-sizing: content-box;
-  background: linear-gradient(to top, #0c7489, #13505B);
+  background: linear-gradient(to top, #196468, #1ba9b1 );
   margin: 0 auto; }
 
 .encabezado {
@@ -45,12 +45,13 @@ body {
 
   .pie {
     color: white;
-    background: linear-gradient(to top, #040404, #13505B); }
+    background: linear-gradient(to top, #040404, #216b6e); }
     .pie ul {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        list-style: none; }
+        list-style: none;
+        padding-top: 10px; }
         .pie ul li {
             padding-top: 2px; }
         .pie .pie__imagePie {
@@ -114,7 +115,6 @@ body {
 }
 
 .SobreNosotros {
-  /*background: linear-gradient(to top, #0c7489, #13505B);*/
   margin: 0%;
   padding-left: 10px;
   padding-right: 10px;
@@ -147,7 +147,6 @@ body {
     color: aliceblue;
     font-family: 'Tourney';
     font-weight: bolder;}
-    /*background-color: rgba(0, 0, 0, 0.3); }*/
   .SobreNosotros__texto__p {
     padding-top: 15px;
     padding-right: 20%;
@@ -178,10 +177,7 @@ body {
 .carousel {
   align-items: center;
   justify-content: center;
-  justify-items: center;
-  box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87);
-  -webkit-box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87);
-  -moz-box-shadow: 12px 11px 13px -5px rgba(0, 0, 0, 0.87); }
+  justify-items: center; }
 
 .carousel-inner img {
   display: flex;
@@ -254,7 +250,7 @@ body {
 
 .clientes__boxes__3:hover {
   height: 50vh;
-  width: 50vh }
+  width: 50vh; }
 
 .clientes__boxes__cajaText {
   color: white;
@@ -307,7 +303,20 @@ body {
   justify-content: center;
   margin-top: 20px; }
 
-/*--- CLASES SECCION 404---*/
+
+@media (max-width:480px){
+  .formContacto{
+    width: 100%;
+    height: 100%;
+  }
+
+  .formContacto_boton {
+    padding-bottom: 30px;
+  }
+
+}
+
+  /*--- CLASES SECCION 404---*/
 .error404 {
   box-sizing: border-box;
   text-align: center;
@@ -348,3 +357,36 @@ body {
 .VolverInicio:hover {
   color: white;
   text-decoration: none; }
+
+/*----------------------------------------------------------------------------------------------------------------*/
+  .probando{
+    font-family: 'Tourney', 'cursive';
+    font-weight: bolder;
+    padding-top: 50px;
+    padding-bottom: 50px;  }
+
+  .main__noticias{
+    margin-top:10px;
+    margin-bottom:10px;  }
+
+  .boxindex{
+    display: flex;
+    justify-content: center;
+    border: 1px greenyellow solid;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 2px 6px -1px #FFFFFF; 
+    box-shadow: 4px 2px 6px -1px #FFFFFF;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+    font-size: 6rem;
+    background-color: rgba(0, 0, 0, 0.3); }
+
+    a{
+      color: white !important;
+      text-decoration: none !important;
+    }
+
+    a:hover{
+      color: greenyellow !important;
+      text-decoration: none !important;
+    }
