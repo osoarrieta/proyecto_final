@@ -153,7 +153,7 @@ body {
     padding-left: 20%;
     background-color: rgba(0, 0, 0, 0.3); }
   .SobreNosotros__texto__box {
-    background: linear-gradient(to top, #13505B, #119DA4);
+    background: linear-gradient(to top, #196468, #119DA4);
     padding-top: 50px;
     padding-bottom: 50px; }
   .SobreNosotros__texto__h3 {
@@ -187,10 +187,21 @@ body {
   height: 500px;
   margin: auto; }
 
+.Servicios__h2{
+  font-size:50px;
+  font-family: 'Tourney', 'cursive';
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 0px black;
+}
+
 .Servicios__p {
   text-align: center;
   color: white;
-  font-size: 13px;
+  font-size: 2rem;
   font-family: 'Tourney', 'cursive';
   font-weight: bolder;
   margin-top: 50px;
@@ -372,7 +383,7 @@ body {
   .boxindex{
     display: flex;
     justify-content: center;
-    border: 1px greenyellow solid;
+    border: 1px rgb(118, 175, 32) solid;
     border-radius: 5px;
     -webkit-box-shadow: 4px 2px 6px -1px #FFFFFF; 
     box-shadow: 4px 2px 6px -1px #FFFFFF;
@@ -390,3 +401,4 @@ body {
       color: greenyellow !important;
       text-decoration: none !important;
     }
+
