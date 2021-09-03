@@ -9,6 +9,15 @@ body {
   background: linear-gradient(to top, #196468, #1ba9b1 );
   margin: 0 auto; }
 
+a{
+  color: white !important;
+  text-decoration: none !important;}
+
+a:hover{
+  color: greenyellow !important;
+  text-decoration: none !important;}
+
+
 .encabezado {
   color: #13505b;
   background-color: #119DA4;
@@ -103,6 +112,30 @@ body {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.main__noticias{
+  margin-top:10px;
+  margin-bottom:10px;}
+
+
+.boxindex{
+  display: flex;
+  justify-content: center;
+  border: 1px rgb(118, 175, 32) solid;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 2px 6px -1px #FFFFFF; 
+  box-shadow: 4px 2px 6px -1px #FFFFFF;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  font-size: 6rem;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.boxindex_h3{
+  font-family: 'Tourney', 'cursive';
+  font-weight: bolder;
+  padding-top: 50px;
+  padding-bottom: 50px;  }
+
+
 @keyframes apareceTitle {
   0% {
     opacity: 0; }
@@ -110,7 +143,7 @@ body {
     opacity: 1; } }
 
 /*--- CLASES SECCION NOSOTROS ---*/
-.losotro{
+.Nosotros{
   background-image: url("../images/Nosotros3.jpg");
 }
 
@@ -195,8 +228,7 @@ body {
   margin-bottom: 50px;
   text-align: center;
   color: white;
-  text-shadow: 2px 2px 0px black;
-}
+  text-shadow: 2px 2px 0px black;}
 
 .Servicios__p {
   text-align: center;
@@ -370,35 +402,7 @@ body {
   text-decoration: none; }
 
 /*----------------------------------------------------------------------------------------------------------------*/
-  .probando{
-    font-family: 'Tourney', 'cursive';
-    font-weight: bolder;
-    padding-top: 50px;
-    padding-bottom: 50px;  }
 
-  .main__noticias{
-    margin-top:10px;
-    margin-bottom:10px;  }
 
-  .boxindex{
-    display: flex;
-    justify-content: center;
-    border: 1px rgb(118, 175, 32) solid;
-    border-radius: 5px;
-    -webkit-box-shadow: 4px 2px 6px -1px #FFFFFF; 
-    box-shadow: 4px 2px 6px -1px #FFFFFF;
-    text-shadow: 2px 2px 5px white;
-    text-align: center;
-    font-size: 6rem;
-    background-color: rgba(0, 0, 0, 0.3); }
 
-    a{
-      color: white !important;
-      text-decoration: none !important;
-    }
-
-    a:hover{
-      color: greenyellow !important;
-      text-decoration: none !important;
-    }
-
+    
